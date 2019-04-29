@@ -150,9 +150,49 @@
 
 }
 
+
+/* Media qurie for small devices */
+@media only screen and (max-width: 768px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        margin: 0;
+    }
+    
+    p, .para-1 {
+        padding: 0 10px;
+    }
+    #body-container {
+        align-self: center;
+        width: 98vw;
+        padding: 0;
+    }
+
+    main {
+        flex-flow: column;
+        flex-wrap: wrap;
+        align-self: center;
+        width: 98vw;
+    }
+
+    #left-section {
+        width: 98vw;
+    }
+    footer {
+        align-self: center;
+        width: 98vw;
+    }
+
+
+}
+
+
+
 /* Media qurie for small devices */
 @media only screen and (max-width: 412px) {
     body {
+      background: none;
       width: 100vw !important;
       margin: 0 !important;
       padding: 0 !important;
