@@ -1,3 +1,4 @@
+/* RESPSONIVE - for large device */
 @media only screen and (max-width: 1366px) {
 
     body {
@@ -128,7 +129,7 @@
     }
     .mini-text {
         font-size: 14px;
-        color: #8BC34A;
+        color: #9eaf9d;
         margin-top: -20px;
         margin-bottom: 27px;
         letter-spacing: 0.05em;
@@ -150,7 +151,7 @@
 }
 
 /* Media qurie for small devices */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 412px) {
     body {
       width: 100vw !important;
       margin: 0 !important;
@@ -186,7 +187,7 @@
         font-size: 36px;
     }
     .nav-links {
-        background-color: lightgoldenrodyellow;
+        background-color: #fdfde6;
         margin: 8px 0 !important;
         width: 100px;
     }
@@ -203,6 +204,7 @@
     }
     p {
         padding: 3px 8px;
+        font-size: 15px;
     }
     h1 {
         padding: 0 6px;
