@@ -202,9 +202,11 @@
         width: 100vw !important;
 
     }
-    p {
+    p, .para-1{
         padding: 3px 8px;
-        font-size: 15px;
+        font-size: 13.5px;
+        letter-spacing: 0.02em;
+        line-height: 1.7em;
     }
     h1 {
         padding: 0 6px;
