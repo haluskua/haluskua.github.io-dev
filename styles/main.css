@@ -1,115 +1,234 @@
-body {
-    color: darkslategray;
-    width: 80vw;
-    margin: 5px 150px 10px 150px;
-    font-family: Merriweather, Georgia, 'Times New Roman', Times, serif;
-    font-weight: lighter;
-}
+@media only screen and (max-width: 1366px) {
 
-#body-container {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    padding: 21px;
-}
-   
-main {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-}
+    body {
+        color: darkslategray;
+        width: 80vw;
+        margin: 5px 150px 10px 150px;
+        font-family: Merriweather, Georgia, 'Times New Roman', Times, serif;
+        font-weight: lighter;
+    }
 
-#right-header {
-    margin-top: 22px;
-}
-
-.contact {
-    font-size: 12px;
-    color: blueviolet;
-    letter-spacing: 0.05em;
-}  
-
-.contact-details {
-    display: flex;
-    font-size: 12px;
-    list-style: none;
-    padding: 4px 0;
-}
-
-.my-details {
-    color: #9E9E9E;
-    padding-left: 5px;
-}
-.reflection-header {
-    font-family: Merriweather, Georgia, 'Times New Roman', Times, serif;
-    display: flex;
-    flex-direction: column;
-    font-size: 17px;
-}  
-/* all ul and li elements */
-ul {
-    padding-left: 0px;
-}
-li {
-    font-weight: bold;
-    text-transform: capitalize;
-    color: #81b9a7;
-    padding: 5px;
-}
-
-#nav-container {
-    display: flex;
-    justify-content: space-between;
-    padding: 8px;
-}
-.sprint-link, .nav-links {
-    font-family: Arial, Helvetica, sans-serif;
-    color: dodgerblue;
-    text-decoration: none;
-    list-style: none;
-    font-size: 18px;
-    padding: 0 8px;
-    border: 1px solid #eef5b0;
-    border-radius: 4px;
-    text-align: center;
-}
-.sprint-link {
-    font-size: 15px;
-    margin-top: 8px;
-    padding: 3px;
-    width: 68%;
+    #body-container {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        padding: 21px;
+    }
     
-}
-.nav-texts {
-    padding: 6px;
-    list-style: none;
-}
-#my-name {
-    font-family: Merriweather, Georgia, 'Times New Roman', Times, serif;
-    font-size: 45px;
-} 
+    main {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+    
+    /* all ul and li elements */
+    ul {
+        padding-left: 0px;
+    }
+    li {
+        font-weight: bold;
+        text-transform: capitalize;
+        color: #81b9a7;
+        padding: 5px;
+    }
+    p {
+        line-height: 1.5em;
+        letter-spacing: 0.03em;
+        text-align: justify;
+    }
+    h1 {
+        letter-spacing: 0.03em;
+    }
 
-/* #greeting {
-    font-family: Merriweather, Georgia, 'Times New Roman', Times, serif;
-} */
+    #left-header {
+        width: auto;
+    }
 
-.mini-text {
-    font-size: 14px;
-    color: #8BC34A;
-    margin-top: -20px;
-    margin-bottom: 27px;
-    letter-spacing: 0.05em;
+    .two-columns {
+    
+    } 
+
+    .print-scr {
+        width: 100%;
+        padding: 10px 5px;
+    }
+    .print-scr2 {
+        width: 60%;
+    }
+    #right-header {
+        margin-top: 22px;
+    }
+
+    .contact {
+        font-size: 12px;
+        color: blueviolet;
+        letter-spacing: 0.05em;
+    }  
+
+    .contact-details {
+        display: flex;
+        font-size: 12px;
+        list-style: none;
+        padding: 4px 0;
+    }
+
+    .my-details {
+        color: #9E9E9E;
+        padding-left: 5px;
+    }
+    .reflection-header {
+        font-family: Merriweather, Georgia, 'Times New Roman', Times, serif;
+        display: flex;
+        flex-direction: column;
+        font-size: 17px;
+    } 
+    #nav-container {
+        display: flex;
+        justify-content: space-between;
+        padding: 8px;
+    }
+    .sprint-link, .nav-links {
+        font-family: Arial, Helvetica, sans-serif;
+        color: dodgerblue;
+        text-decoration: none;
+        list-style: none;
+        font-size: 18px;
+        padding: 0 12px;
+        margin: 0 8px;
+        border: 1px solid #eef5b0;
+        border-radius: 4px;
+        text-align: center;
+    }
+    .nav-links:hover {
+        background-color: lightgoldenrodyellow;
+    }
+    .nav-links:visited{
+        color: red;
+    }
+    .sprint-link {
+        font-size: 15px;
+        margin-top: 8px;
+        padding: 3px;
+        width: 68%;
+        
+    }
+    .nav-texts {
+        padding: 6px;
+        list-style: none;
+    }
+    #my-name {
+        font-family: Merriweather, Georgia, 'Times New Roman', Times, serif;
+        font-size: 45px;
+    } 
+
+    .sub-title {
+        color: rgb(44, 61, 13);
+        letter-spacing: 0.03em;
+        line-height: 1.5em;
+    }
+    .mini-text {
+        font-size: 14px;
+        color: #8BC34A;
+        margin-top: -20px;
+        margin-bottom: 27px;
+        letter-spacing: 0.05em;
+    } 
+    .para-1 {
+        line-height: 1.5em;
+        padding: 0 50px 10px 10px;
+    }
+    #left-section {
+        width: 80%;
+    }
+    #right-section {
+        width: 18%;
+    }
+    footer {
+        margin-top: 50px;
+    }
+
 }
-.para-1 {
-    line-height: 1.5em;
-    padding: 0 50px 10px 10px;
-}
-#left-section {
-    width: 80%;
-}
-#right-section {
-    width: 18%;
-}
-footer {
-    margin-top: 50px;
+
+/* Media qurie for small devices */
+@media only screen and (max-width: 600px) {
+    body {
+      width: 100vw !important;
+      margin: 0 !important;
+      padding: 0 !important;
+    }
+    main {
+        width: 100vw !important;
+        display: flex;
+        flex-flow: column;
+    }
+    #body-container {
+        display: flex;
+        flex-flow: column;
+        padding: 0;
+    }
+    #nav-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 0;
+        margin: 0;
+    }
+    .nav-texts {
+        font-size: 16px;
+        text-transform: lowercase;
+    }
+    .mini-text {
+        text-align: center;
+    }
+    #my-name {
+        margin: 20px 0px;
+        text-transform: uppercase;
+        font-size: 36px;
+    }
+    .nav-links {
+        background-color: lightgoldenrodyellow;
+        margin: 8px 0 !important;
+        width: 100px;
+    }
+    #right-header {
+        margin: 0 !important;
+    }
+    #right-section  {
+        margin-left: 14px;
+        width: 36%;
+    }
+    #left-section {
+        width: 100vw !important;
+
+    }
+    p {
+        padding: 3px 8px;
+    }
+    h1 {
+        padding: 0 6px;
+        margin: 13px 0px;
+        text-align: center;
+    }
+    .sub-title {
+        padding: 0 9px;
+        margin: 16px 8px;
+        letter-spacing: 0.03em;
+        text-align: justify;
+    }
+    .contact {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 0 12px;
+    }
+    .print-scr2 {
+        width: 100%;
+    }
+    .print-scr {
+        padding: 0;
+    }
+    .para-1 {
+        padding: 0 9px;
+    }
+
 }
