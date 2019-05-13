@@ -2,9 +2,10 @@
 @media only screen and (max-width: 1366px) {
 
     body {
+        background-color: ghostwhite;
         color: darkslategray;
         width: 80vw;
-        margin: 5px 150px 10px 150px;
+        margin: 0 auto;
         font-family: Merriweather, Georgia, 'Times New Roman', Times, serif;
         font-weight: lighter;
     }
@@ -13,24 +14,79 @@
         display: flex;
         width: 100%;
         justify-content: space-between;
-        padding: 21px;
+        border: 1px solid gainsboro;
+        border-bottom: none;
+        padding: 10px;
+        border-radius: 5px;
+        margin: 4px 5px 10px 5px;
     }
-    
+    nav{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .li-parent {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        margin: 0 8px;
+    }
+    .li-parent, li {
+        list-style: none;
+        width: 100%;
+    }
+    .menu-name {
+        color: orange;
+    }
+    .menu-title {
+        width: 100%;
+        color: #4c695c;
+        font-weight: lighter;
+        text-align: left;
+    }
+    .menu-title:visited {
+        color: red;
+    }
+    .dropdown-menu {
+        background-color: #8fa99b;
+        color: white;
+        font-size:1.05em;
+        text-transform: uppercase;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        border: 1px rgb(20, 16, 16);
+        padding: 4px 0 4px 0;
+    }
     main {
         display: flex;
         width: 100%;
+        padding: 8px;
+        background-color: white;
         justify-content: space-between;
+    }
+    #menu-button {
+        display: none;
+    }
+    #sprint1-drop {
+        display: none;
     }
     
     /* all ul and li elements */
     ul {
         padding-left: 0px;
+        width: 100%;
     }
     li {
+        display: flex;
+        justify-content: center;
         font-weight: bold;
         text-transform: capitalize;
         color: #81b9a7;
-        padding: 5px;
+        width: 100%;
+        background-color: #f9fbf8;
+        border-radius: 4px;
+        padding: 4px;
     }
     p {
         line-height: 1.5em;
@@ -40,17 +96,21 @@
     h1 {
         letter-spacing: 0.03em;
     }
-
+    h1, h2, h3, h4 {
+        color: #097d68;
+    }
     #left-header {
         width: auto;
     }
-
-    .two-columns {
-    
-    } 
-
-    .print-scr {
+    .row {
+        display: flex;
         width: 100%;
+        margin: 0 auto;
+        height: auto;
+        justify-content: flex-start;
+    } 
+    .print-scr {
+        width: 60%;
         padding: 10px 5px;
     }
     .print-scr2 {
@@ -59,20 +119,19 @@
     #right-header {
         margin-top: 22px;
     }
-
     .contact {
         font-size: 12px;
         color: blueviolet;
         letter-spacing: 0.05em;
     }  
-
     .contact-details {
         display: flex;
+        justify-content: center;
+        width: 62%;
         font-size: 12px;
         list-style: none;
         padding: 4px 0;
     }
-
     .my-details {
         color: #9E9E9E;
         padding-left: 5px;
@@ -89,29 +148,28 @@
         padding: 8px;
     }
     .sprint-link, .nav-links {
+        display: flex;
+        width: 100%;
         font-family: Arial, Helvetica, sans-serif;
-        color: dodgerblue;
         text-decoration: none;
         list-style: none;
+        padding: 8px;
         font-size: 18px;
-        padding: 0 12px;
-        margin: 0 8px;
-        border: 1px solid #eef5b0;
         border-radius: 4px;
         text-align: center;
+        border-bottom: 1px solid #c9e4d5;
     }
-    .nav-links:hover {
-        background-color: lightgoldenrodyellow;
-    }
-    .nav-links:visited{
+    .nav-links:hover, .nav-links:visited, .nav-links:active {
+        background-color: white;
+        border-bottom: 1px solid #c9e4d5;
+        cursor: pointer;
         color: red;
     }
     .sprint-link {
         font-size: 15px;
         margin-top: 8px;
         padding: 3px;
-        width: 68%;
-        
+        width: 100%;
     }
     .nav-texts {
         padding: 6px;
@@ -121,7 +179,6 @@
         font-family: Merriweather, Georgia, 'Times New Roman', Times, serif;
         font-size: 45px;
     } 
-
     .sub-title {
         color: rgb(44, 61, 13);
         letter-spacing: 0.03em;
@@ -135,11 +192,17 @@
         letter-spacing: 0.05em;
     } 
     .para-1 {
-        line-height: 1.5em;
-        padding: 0 50px 10px 10px;
+        line-height: 1.6em;
+        /* padding: 0 50px 10px 10px; */
+        font-family: sans-serif;
+        letter-spacing: 0.03em;
     }
     #left-section {
         width: 80%;
+        border: 1px solid gainsboro;
+        padding: 10px;
+        border-radius: 5px;
+        margin: 0 5px;
     }
     #right-section {
         width: 18%;
@@ -147,9 +210,7 @@
     footer {
         margin-top: 50px;
     }
-
 }
-
 
 /* Media qurie for small devices */
 @media only screen and (max-width: 768px) {
@@ -201,11 +262,21 @@
         width: 100vw !important;
         display: flex;
         flex-flow: column;
+        padding: 0;
     }
     #body-container {
         display: flex;
         flex-flow: column;
         padding: 0;
+        align-items: center;
+        margin: 0 auto;
+    }
+    nav {
+        flex-direction: column;
+        width: 100%;
+    }
+    li {
+        justify-content: center;
     }
     #nav-container {
         display: flex;
@@ -220,6 +291,7 @@
     }
     .mini-text {
         text-align: center;
+        font-weight: lighter;
     }
     #my-name {
         margin: 20px 0px;
@@ -228,8 +300,8 @@
     }
     .nav-links {
         background-color: #fdfde6;
-        margin: 8px 0 !important;
         width: 100px;
+        margin: 0 !important;
     }
     #right-header {
         margin: 0 !important;
@@ -240,7 +312,8 @@
     }
     #left-section {
         width: 100vw !important;
-
+        margin: 0 auto;
+        padding: 0;
     }
     p, .para-1{
         padding: 3px 8px;
@@ -248,15 +321,16 @@
         letter-spacing: 0.02em;
         line-height: 1.7em;
     }
-    h1 {
+    h2, h3, h4, h5 {
+        margin: 8px;
+    }
+    h1 {  
         padding: 0 6px;
         margin: 13px 0px;
         text-align: center;
     }
     .sub-title {
-        padding: 0 9px;
-        margin: 16px 8px;
-        letter-spacing: 0.03em;
+        font-size: 0.89em;
         text-align: justify;
     }
     .contact {
@@ -264,15 +338,70 @@
         flex-wrap: wrap;
         justify-content: space-around;
         padding: 0 12px;
+        width: 100vw;
+    }
+    .contact-details {
+        width: 100%;
     }
     .print-scr2 {
         width: 100%;
     }
     .print-scr {
+        width: 100%;
         padding: 0;
     }
     .para-1 {
         padding: 0 9px;
+    }
+    .row {
+        display: flex;
+        flex-direction: column;
+    }
+    .menu-title {
+        text-align: center;
+    }
+    .menu-text {
+        font-weight: bold;
+        font-size: 0.85em;
+    }
+    .li-parent {
+        align-items: center;
+        margin: 0 auto;
+        width: 63%;
+    }
+    .reflection-header {
+        width: 100%;
+        margin: 10px;
+        text-align: center;
+    }
+    .dropdown-menu {
+        font-size: 0.8em;
+        padding: 8px;
+        width: 100%;
+    }
+    #menu-button {
+        display: flex;
+        align-self: flex-start;
+        justify-content: center;
+        height: auto;
+        padding: 7px;
+        color: oldlace;
+        border-radius: 2px;
+        font-size: 1.01em;
+        font-weight: bold;
+        letter-spacing: 0.03em;
+        border: 0;
+        background-color: #76a79e;
+        margin: 0 0 10px 10px;
+        width: 90px;
+    }
+    .row {
+        display: none;
+        position: relative;
+        overflow: auto;
+    }
+    .show {
+        display: flex;
     }
 
 }
