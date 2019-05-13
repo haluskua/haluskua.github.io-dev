@@ -270,6 +270,7 @@
         padding: 0;
         align-items: center;
         margin: 0 auto;
+        width: 100%;
     }
     nav {
         flex-direction: column;
@@ -305,6 +306,7 @@
     }
     #right-header {
         margin: 0 !important;
+        width: 100%;
     }
     #right-section  {
         margin-left: 14px;
@@ -337,8 +339,7 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
-        padding: 0 12px;
-        width: 100vw;
+        width: 100%;
     }
     .contact-details {
         width: 100%;
@@ -352,6 +353,7 @@
     }
     .para-1 {
         padding: 0 9px;
+        font-size: 13.9px;
     }
     .row {
         display: flex;
@@ -392,7 +394,7 @@
         letter-spacing: 0.03em;
         border: 0;
         background-color: #76a79e;
-        margin: 0 0 10px 10px;
+        margin: 0 0 10px -4px;
         width: 90px;
     }
     .row {
