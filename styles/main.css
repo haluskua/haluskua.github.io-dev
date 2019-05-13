@@ -1,5 +1,5 @@
 /* RESPSONIVE - for large device */
-@media only screen and (max-width: 1366px) {
+@media only screen and (max-width: 1440px) {
 
     body {
         background-color: ghostwhite;
@@ -223,8 +223,10 @@
     
     p, .para-1 {
         padding: 0 10px;
+        font-size: 18px;
     }
     #body-container {
+        flex-direction: column;
         align-self: center;
         width: 98vw;
         padding: 0;
@@ -236,13 +238,33 @@
         align-self: center;
         width: 98vw;
     }
+    .contact {
+        display: flex;
+    }
 
     #left-section {
-        width: 98vw;
+        width: 96%;
+    }
+    .print-scr, .print-scr2 {
+        display: flex;
+        margin: 0 auto;
+    }
+    #my-name {
+        display: flex;
+        justify-content: center;
+    }
+    .mini-text {
+        display: flex;
+        justify-content: center;
+    }
+    .menu-title {
+        text-align: center;
     }
     footer {
         align-self: center;
         width: 98vw;
+        margin: 0 auto;
+        padding: 0;
     }
 
 
@@ -331,6 +353,9 @@
         margin: 13px 0px;
         text-align: center;
     }
+    h5 {
+        letter-spacing: 0.04em;
+    }
     .sub-title {
         font-size: 0.89em;
         text-align: justify;
@@ -353,7 +378,8 @@
     }
     .para-1 {
         padding: 0 9px;
-        font-size: 13.9px;
+        font-size: 14.6px;
+        line-height: 1.67em;
     }
     .row {
         display: flex;
