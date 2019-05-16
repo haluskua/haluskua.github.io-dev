@@ -87,6 +87,10 @@
         border-radius: 4px;
         padding: 4px;
     }
+    em {
+        margin-left: 12px;
+        display: flex;
+    }
     p {
         line-height: 1.5em;
         letter-spacing: 0.03em;
@@ -140,6 +144,7 @@
     }
     #bread-crumbs {
         color: darkolivegreen;
+        background-color: #f9fbf8;
         font-family: Georgia, 'Times New Roman', Times, serif;
         font-size: 15px;
         font-style: italic;
@@ -147,6 +152,8 @@
         padding-left: 8px;
         top: 13%;
         left: 90%; 
+        border-bottom: 1px solid lightslategrey;
+        padding: 4px;
     }
     .reflection-header {
         font-family: Merriweather, Georgia, 'Times New Roman', Times, serif;
@@ -381,6 +388,7 @@
     }
     h2, h3, h4, h5 {
         margin: 8px;
+        line-height: 1.43em;
     }
     h1 {  
         padding: 0 6px;
